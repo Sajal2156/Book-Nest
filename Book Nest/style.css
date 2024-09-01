@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+/*header*/
+.header{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 0.5rem 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0,0,0,0.5);
+}
+
+.header .navbar{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.header  img {
+    width: 200px;
+    height: 60px;
+
+}
+
+.header .navbar .navlinks {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.header .navbar .navlinks a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-weight: 600;
+}
+.header .navbar .navlinks a:hover{
+    color: aquamarine;
+}
+
+.header .navbar .navlinks a.active{
+    color: aquamarine;
+
+}
+
+.header .navbar .profile{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.8rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#menubtn{
+    font-size: 2.2rem;
+    color: aliceblue;
+    display: none;
+
+
+}
+
+/* home section */
+.home{
+    width: 100%;
+    height: 100vh;
+    background: url(/images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home h1{
+    font-size: 3.4rem;
+    text-transform: capitalize;
+    color: aliceblue;
+    padding-top: 4.5rem;
+}
+
+.home p{
+    color: #fff;
+    width: 500px;
+    padding-bottom: 4rem;
+    padding-top: 1.5rem;
+
+}
+
+.home button.read{
+    width: 200px;
+    height: 60px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.home button.read:hover{
+    background: #179fd5;
+    border: 2px solid #179fd5;
+}
+
+.home .social{
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.home .social i{
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background: #fff;
+    color: aqua;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.home .social i:hover{
+    color: #fff;
+    background: #179fd5;
+}
+
+@media(max-width:1250px) {
+    .header .navbar {
+        gap: 1rem;
+    }
+
+    .header .navbar .navlinks {
+        gap: 1rem;
+    }
+
+    .header .navbar .profile{
+        gap: 1rem;
+    }
+
+    .home {
+        padding: 3rem 10%;
+    }
+
+    .header{
+        padding: 0.5rem 10%;
+    }
+}
+
+@media(max-width:991) {
+    
+
+    .header .navbar .navlinks {
+        position: absolute;
+        left: 0;
+        top: 5rem;
+        width: 100%;
+        height: 280px;
+        background: #fff;
+        text-align: center;
+        transition: 0.4s ease-in-out;
+        display: block;
+    }
+
+
+    .header .navbar .navlinks a{
+        
+        color: #179fd5;
+        padding-bottom: 2rem;
+    }
+
+    .header .navbar .navlinks li {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        border-bottom: 1px solid #179fd5;
+
+    }
+    #menubtn{
+        display: block;    
+    }
+    }
+
+    section{
+        padding: 2rem 14%;
+        text-align: center;
+    }
+
+
+ /* about section */
+.about {
+    width: 100%;
+    height: 100vh;
+    background: url(/images/about-bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+section h1{
+    text-transform: capitalize;
+    font-size: 3.2rem;
+    color: black;
+    margin-top: 2rem;
+}
+section h1 span{
+    color: aqua;
+}
+
+section p.text{
+    color: black;
+    padding: 0 5rem;
+}
+
+.about .about-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    border: 3px solid aqua;
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin-top: 2rem;
+}
+.about-row .about-col{
+    text-align: justify;
+}
+
+.about-row .about-col p {
+    color: black;
+    font-size: 1.2rem;
+    text-indent: 20px;
+   padding-bottom: 2.7rem;
+}
+
+.about-row .about-col .button a{
+    background: aqua;
+    color: #fff;
+    padding: 1rem 3rem;
+    text-transform: capitalize;
+    border-radius: 40px;
+}
+
+.about-row .about-col .button a:hover{
+    background: #179fd5;
+    color: #fff;
+
+}
+
+.about-row .about-col img{
+    width: 100%;
+    height: 24rem
+}
